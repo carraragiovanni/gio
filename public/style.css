@@ -1,0 +1,38 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+a {
+    display: block;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+#left {
+    width: 50%;
+}
+
+#right {
+    width: 50%;
+}
+
+.links {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#profile-photo {
+    width: 50px;
+}
+
+
