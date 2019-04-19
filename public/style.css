@@ -7,10 +7,16 @@ a {
     display: block;
 }
 
-#main {
+#main-index { 
     display: flex;
     justify-content: space-between;
     margin: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    #main-index {
+        margin: 15px;
+    }
 }
 
 #left {
@@ -32,7 +38,7 @@ img {
 }
 
 #profile-photo {
-    width: 50px;
+    width: 25%;
+    height: auto;
 }
-
 
