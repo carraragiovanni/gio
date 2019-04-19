@@ -15,4 +15,4 @@ app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.PDF'));
 //RESUME
 app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carrara_Resume.pdf'));
 
-app.listen(3000);
+var port = process.env.PORT || 8080;
