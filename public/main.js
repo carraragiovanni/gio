@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     document.addEventListener('click', function (click) {
-        clearAllLinks();
-        if (click.target.nodeName == "A") {
-            document.getElementById('right').style.display = "inline"
-            populateRight(click.target.innerHTML);
+        // console.log(click.target.classList.contains("left-link"));
+        if (click.target.classList.contains("left-link")) {
+            clearAllLinks();
+            document.getElementById('right-main-container').style.display = "inline"
+            populateRight(click.target.id);
+        } else if (click.target.classList.contains("right-link")) {
+            console.log("right");
         } else {
-            document.getElementById('right').style.display = "none";
+            document.getElementById('right-main-container').style.display = "none";
         }
     })
 });
 
-function clearAllLinks() {
-        var links = document.getElementsByClassName("links");
-
+function clearAllLinks(linkType) {
+        // 0 = 1st LEVEL - LEFT
+        // 1 =  LEVEL - RIGHT
+        var links = document.getElementsByClassName("right-item-container");
         for (var i = 0; i < links.length; i++) {
             links[i].style.display = "none";
         }
@@ -20,20 +24,20 @@ function clearAllLinks() {
 
 function populateRight(type) {
     switch (type) {
-        case "code":
-        document.getElementById("code-links").style.display = "inline";
+        case "code-link-left":
+        document.getElementById("code-right-container").style.display = "inline";
         break;
-        case "CAD":
-        document.getElementById("cad-links").style.display = "inline";
+        case "cad-link-left":
+        document.getElementById("cad-right-container").style.display = "inline";
         break;
-        case "12M":
-        document.getElementById("12M").style.display = "inline";
+        case "12m-link-left":
+        document.getElementById("12m-right-container").style.display = "inline";
         break;
-        case "bicicletta":
-        document.getElementById("bicicletta").style.display = "inline";
+        case "bicicletta-link-left":
+        document.getElementById("bicicletta-right-container").style.display = "inline";
         break;
-        case "about":
-        document.getElementById("about").style.display = "inline";
+        case "about-link-left":
+        document.getElementById("about-right-container").style.display = "inline";
         break;
     }
 }
