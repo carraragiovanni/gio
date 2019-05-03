@@ -33,8 +33,8 @@ function populateRight(type) {
         case "12m-link-left":
         document.getElementById("12m-right-container").style.display = "inline";
         break;
-        case "bicicletta-link-left":
-        document.getElementById("bicicletta-right-container").style.display = "inline";
+        case "superTesa-link-left":
+        document.getElementById("superTesa-right-container").style.display = "inline";
         break;
         case "about-link-left":
         document.getElementById("about-right-container").style.display = "inline";
