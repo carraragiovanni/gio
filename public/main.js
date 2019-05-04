@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById('right-main-container').style.display = "inline"
             populateRight(click.target.id);
         } else if (click.target.classList.contains("right-link")) {
-            console.log("right");
+            console.log("right link");
+        } else if (click.target.classList.contains("right-description")) {
+            console.log("right description");
         } else {
             document.getElementById('right-main-container').style.display = "none";
         }
