@@ -10,7 +10,9 @@ app.use('/cad/motor_wrench.html', express.static(__dirname + '/public/CAD/motor_
 app.use('/cad/dogbone_press.html', express.static(__dirname + '/public/CAD/dogbone_press/dogbone_press.pdf'));
 app.use('/cad/off-board_charger.html', express.static(__dirname + '/public/CAD/off-board_charger/off-board_charger.pdf'));
 app.use('/cad/tool_cart.html', express.static(__dirname + '/public/CAD/tool_cart/TOOL_CART_27MAY16_v1.PDF'));
-app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.PDF'));
+
+//12M
+app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.pdf'));
 
 //RESUME
 app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carrara_Resume.pdf'));
