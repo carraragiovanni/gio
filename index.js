@@ -20,4 +20,7 @@ app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carr
 //BIKE
 app.use('/bike/superTesa.html', express.static(__dirname + '/public/bike/superTesa.pdf'));
 
+//MODELBOAT
+app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBoat/modelBoat.PNG'));
+
 app.listen(process.env.PORT || 4600);
