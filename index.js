@@ -9,7 +9,7 @@ app.use('/cad/assembly_cart.html', express.static(__dirname + '/public/CAD/assem
 app.use('/cad/motor_wrench.html', express.static(__dirname + '/public/CAD/motor_wrench/motor_wrench.pdf'));
 app.use('/cad/dogbone_press.html', express.static(__dirname + '/public/CAD/dogbone_press/dogbone_press.pdf'));
 app.use('/cad/off-board_charger.html', express.static(__dirname + '/public/CAD/off-board_charger/off-board_charger.pdf'));
-app.use('/cad/tool_cart.html', express.static(__dirname + '/public/CAD/tool_cart/TOOL_CART_27MAY16_v1.PDF'));
+app.use('/cad/tool_cart.html', express.static(__dirname + '/public/CAD/Tool_Cart/TOOL_CART_27MAY16_v1.PDF'));
 
 //12M
 app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.pdf'));
