@@ -22,5 +22,7 @@ app.use('/bike/superTesa.html', express.static(__dirname + '/public/bike/superTe
 
 //MODELBOAT
 app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBoat/modelBoat.PNG'));
+app.use('/modelBoat/oRingModelBoatCalc.html', express.static(__dirname + '/public/modelBoat/radialInnerSealing-2019-05-13-21-18-27.pdf'));
+app.use('/modelBoat/oRingModelBoatDWG.html', express.static(__dirname + '/public/modelBoat/modelBoatOring.pdf'));
 
 app.listen(process.env.PORT || 4600);
