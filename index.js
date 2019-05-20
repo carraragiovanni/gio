@@ -21,6 +21,7 @@ app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carr
 app.use('/bike/superTesa.html', express.static(__dirname + '/public/bike/superTesa.pdf'));
 app.use('/bike/superTesaPhoto1.html', express.static(__dirname + '/public/bike/superTesaPhoto1.jpg'));
 app.use('/bike/superTesaPhoto2.html', express.static(__dirname + '/public/bike/superTesaPhoto2.jpg'));
+app.use('/bike/superTesaPhoto3.html', express.static(__dirname + '/public/bike/superTesaPhoto3.jpg'));
 
 //MODELBOAT
 app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBoat/modelBoat.PNG'));
