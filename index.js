@@ -22,6 +22,7 @@ app.use('/bike/superTesa.html', express.static(__dirname + '/public/bike/superTe
 app.use('/bike/superTesaPhoto1.html', express.static(__dirname + '/public/bike/superTesaPhoto1.jpg'));
 app.use('/bike/superTesaPhoto2.html', express.static(__dirname + '/public/bike/superTesaPhoto2.jpg'));
 app.use('/bike/superTesaPhoto3.html', express.static(__dirname + '/public/bike/superTesaPhoto3.jpg'));
+app.use('/bike/superTesaPhoto4.html', express.static(__dirname + '/public/bike/superTesaPhoto4.jpg'));
 
 //MODELBOAT
 app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBoat/modelBoat.PNG'));
