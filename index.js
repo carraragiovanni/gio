@@ -18,11 +18,15 @@ app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.pdf'));
 app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carrara_Resume.pdf'));
 
 //BIKE
+app.use('/bike/superTesaComplete.html', express.static(__dirname + '/public/bike/superTesaComplete.pdf'));
 app.use('/bike/superTesa.html', express.static(__dirname + '/public/bike/superTesa.pdf'));
 app.use('/bike/superTesaPhoto1.html', express.static(__dirname + '/public/bike/superTesaPhoto1.jpg'));
 app.use('/bike/superTesaPhoto2.html', express.static(__dirname + '/public/bike/superTesaPhoto2.jpg'));
 app.use('/bike/superTesaPhoto3.html', express.static(__dirname + '/public/bike/superTesaPhoto3.jpg'));
 app.use('/bike/superTesaPhoto4.html', express.static(__dirname + '/public/bike/superTesaPhoto4.jpg'));
+
+//NOTES
+app.use('/notes/notes.html', express.static(__dirname + '/public/notes/notes.mov'));
 
 //MODELBOAT
 app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBoat/modelBoat.PNG'));
