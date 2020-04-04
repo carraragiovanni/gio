@@ -33,4 +33,7 @@ app.use('/modelBoat/modelBoat.html', express.static(__dirname + '/public/modelBo
 app.use('/modelBoat/oRingModelBoatCalc.html', express.static(__dirname + '/public/modelBoat/radialInnerSealing-2019-05-13-21-18-27.pdf'));
 app.use('/modelBoat/oRingModelBoatDWG.html', express.static(__dirname + '/public/modelBoat/modelBoatOring.pdf'));
 
+//COVERLETTER
+app.use('/glacier_cover_letter.html', express.static(__dirname + '/public/cover_letter/glacier_cover_letter.pdf'));
+
 app.listen(process.env.PORT || 4600);
