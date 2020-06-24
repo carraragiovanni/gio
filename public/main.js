@@ -35,6 +35,9 @@ function populateRight(type) {
         case "12m-link-left":
         document.getElementById("12m-right-container").style.display = "inline";
         break;
+        case "compresso-link-left":
+        document.getElementById("compresso-right-container").style.display = "inline";
+        break;
         case "model-boat-left":
         document.getElementById("model-boat-right-container").style.display = "inline";
         break;

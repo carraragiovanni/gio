@@ -14,6 +14,9 @@ app.use('/cad/tool_cart.html', express.static(__dirname + '/public/CAD/Tool_Cart
 //12M
 app.use('/12M/many.html', express.static(__dirname + '/public/12M/many.pdf'));
 
+//compresso
+app.use('/compresso/compresso.html', express.static(__dirname + '/public/compresso/compresso.pdf'));
+
 //RESUME
 app.use('/resume.html', express.static(__dirname + '/public/resume/Giovanni_Carrara_Resume.pdf'));
 
