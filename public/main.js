@@ -44,6 +44,9 @@ function populateRight(type) {
         case "superTesa-link-left":
         document.getElementById("superTesa-right-container").style.display = "inline";
         break;
+        case "giosnotes-link-left":
+        document.getElementById("giosnotes-right-container").style.display = "inline";
+        break;
         case "about-link-left":
         document.getElementById("about-right-container").style.display = "inline";
         break;
