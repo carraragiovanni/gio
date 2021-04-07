@@ -1,3 +1,12 @@
+async function sendSMS() {
+    return await axios({
+        method: 'POST',
+        url: `/sendsms?body=${$("#input").val()}`,
+    }).then(function (topStories) {
+        console.log(topStories)
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
     document.addEventListener('click', function (click) {
         // console.log(click.target.classList.contains("left-link"));

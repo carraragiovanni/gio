@@ -1,3 +1,4 @@
+var axios = require('axios');
 var express = require('express');
 var app = express();
 app.use(express.static('public'));
@@ -40,3 +41,26 @@ app.use('/modelBoat/oRingModelBoatDWG.html', express.static(__dirname + '/public
 app.use('/glacier_cover_letter.html', express.static(__dirname + '/public/cover_letter/glacier_cover_letter.pdf'));
 
 app.listen(process.env.PORT || 4600);
+
+
+app.route('/sendsms').post(async function (req, res) {
+    axios({
+        method: 'POST',
+        url: `https://rest-api.d7networks.com/secure/send`,
+        headers: {
+            'Authorization': 'Basic eWhhazM5OTE6MDB6MndDZG0=',
+            'Content-Type': 'application/json',
+            'Postman-Token': 'e747d85c-21d3-411c-acf5-f93d2977598b',
+            'cache-control': 'no-cache'
+        },
+        data: {
+            'to': '0012158375180',
+            'content': `${req.query.body}`,
+            'from':'smsinfo'
+        },
+    }).then(function (response) {
+        res.send({
+            response: response.data
+        });
+    })
+});
